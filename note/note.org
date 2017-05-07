@@ -1,0 +1,13 @@
+## 开发板的实践手册和笔记
+
+- 开发板用的核心板是联发科的MT7628
+
+- 连接开发板的两种方式
+@1：用mini USB线连接，内嵌了转串口，可直接当串口使用。
+工具：Linux下minicom，windows下secure CRT等。
+
+@2：用网线远程登录
+工具：Linux下ssh登录，例如：ssh 用户名@开发板的IP 回车之后输入用户名密码
+Windows下secure CRT等。用ssh2连接
+
+
