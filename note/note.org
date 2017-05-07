@@ -11,3 +11,19 @@
 Windows下secure CRT等。用ssh2连接
 
 
+- python 配置cgi
+cd /etc/apache2/
+vim apache2.conf 添加如下内容：
+ScriptAlias /cgi-bin/ /var/www/cgi-bin/
+<Directory "/var/www/cgi-bin">
+	AllowOverride None
+	Options +ExecCGI
+	Order allow,deny
+	Allow from all
+</Directory>
+AddHandler cgi-script .cgi .pl .py
+保存退出
+接下来我们还需要配置cgi文件
+mods-enabled/mime.load进入此文件，添加如下代码
+LoadModule cgi_module /usr/lib/apache2/modules/mod_cgi.so
+
