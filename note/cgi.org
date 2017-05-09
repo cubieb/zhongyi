@@ -1,0 +1,10 @@
+## 在项目中用的知识
+*** CGI 教程笔记
+- 获取get请求数据方法
+
+  Get请求就是我们在浏览器地址栏输入URL时发送请求的方式，或者我们在HTML
+中定义一个表单（form）时，把action属性设为“Get”时的工作方式；
+Get请求字符串就是跟在URL后面以问号“?”开始的字符串，但不包括问号。比如这
+样的一个请求：http://127.0.0.1/cgi-bin/out.cgi?ThisIsTheGetString
+在上面这个URL中，“ThisIsTheGetString”就是Get请求字符串。
+
