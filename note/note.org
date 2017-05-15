@@ -43,3 +43,23 @@ apt-get install lib32z1 lib32ncurses5
 
 所以，在/etc/ld.so.conf中加入/usr/local/lib这一行，保存之后，再运行：/sbin/ldconfig –v更新一下配置即可。
 
+方法1：
+
+编辑/etc/ld.so.conf文件，在新的一行中加入库文件所在目录；
+
+运行ldconfig，以更新/etc/ld.so.cache文件；
+方法2：
+
+在/etc/ld.so.conf.d/目录下新建任何以.conf为后缀的文件，在该文件中加入库文件所在的目录；
+
+运行ldconfig，以更新/etc/ld.so.cache文件；
+
+
+本人觉得第二种办法更为方便，对于原系统的改动最小。因为/etc/ld.so.conf文件的内容是include /etc/ld.so.conf.d/*.conf
+所以，在/etc/ld.so.conf.d/目录下加入的任何以.conf为后缀的文件都能被识别到。
+本人的作法：  
+1. 将所有的用户需要用到的库放到/usr/loca/lib；  
+2. 在/etc/ld.so.conf.d/目录下新建文件usr-libs.conf，内容是：/usr/local/lib  
+3. #sudo ldconfig  
+ld.so.cache的更新是递增式的，就像PATH系统环境变量一样，不是从头重新建立，而是向上累加。
+除非重新开机，才是从零开始建立ld.so.cache文件。
