@@ -27,3 +27,19 @@ AddHandler cgi-script .cgi .pl .py
 mods-enabled/mime.load进入此文件，添加如下代码
 LoadModule cgi_module /usr/lib/apache2/modules/mod_cgi.so
 
+
+64为系统安装交叉编译工具(32bit)
+1.配置没问题，但是用交叉编译工具编译的时候出现
+bash: /usr/local/toolschain/mips/bin/mipsel-linux-gcc: No such file or directory
+表示没有安装支持32bit的库。
+debian 
+apt-get install lib32z1 lib32ncurses5
+然后
+/usr/local/toolschain/mips/bin/../libexec/gcc/mipsel-buildroot-linux-uclibc/4.6.3/cc1: error while loading shared libraries: libmpc.so.3: cannot open shared object file: No such file or directory
+
+出现这类错误表示，系统不知道xxx.so放在哪个目录下，这时候就要在/etc/ld.so.conf中加入xxx.so所在的目录。
+
+一般而言，有很多的so会存放在/usr/local/lib这个目录底下，去这个目录底下找，果然发现自己所需要的.so文件。
+
+所以，在/etc/ld.so.conf中加入/usr/local/lib这一行，保存之后，再运行：/sbin/ldconfig –v更新一下配置即可。
+
