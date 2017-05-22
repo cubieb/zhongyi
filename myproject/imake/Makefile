@@ -1,11 +1,11 @@
-TARGET := my.cgi
+TARGET := test.cgi
 
-#CROSS := mipsel-linux-
+CROSS := mipsel-linux-
 CROSS :=
 CC :=$(CROSS)gcc 
 
 
-all: my.c utils.c mod_method.c
+all: scan.c utils.c
 	$(CC) $^ -o $(TARGET)
 
 clean:

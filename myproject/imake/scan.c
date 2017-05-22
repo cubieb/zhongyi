@@ -1,5 +1,9 @@
 #include "utils.h"
 
+/*
+ * this module is search ths all can be use ssid
+ */
+
 //#define CMDLEN 1024
 #define IFNAMSIZ 256
 
@@ -38,9 +42,9 @@ int main(int argc, char *argv[])
 
 	web_debug_header();
 
-	//第一次cmd: ra0 get_site_survey:
+	//the first time: cmd is get the ra0 get_site_survey message.
 	fgets(cmd, sizeof(cmd), pp);
-	//第二次cmd: Ch SSID BSSID Security ...
+	//the second time:cmd is get the Ch SSID BSSID Security ... message.
 	fgets(cmd, sizeof(cmd), pp);
 
 	int index = 0;
