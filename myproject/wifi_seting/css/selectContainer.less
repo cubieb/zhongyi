@@ -1,0 +1,82 @@
+/* ---- Select ----*/
+@rem: 22.5rem;
+
+.selectContainer {
+  position: relative;
+  width: 288/@rem;
+  background-color: #438cff;
+  z-index: 1000;
+  background: #FFF;
+  margin-top: 6/@rem;
+}
+
+.selectContainer input {
+}
+
+.selectContainer .selectOption {
+  display: none;
+}
+
+.selectContainer .shows {
+  width: 20/@rem;
+  height: 20/@rem;
+  position: absolute;
+  right: 2/@rem;
+  top: 2/@rem;
+}
+
+.selectContainer ul {
+  position: absolute;
+  width: 290/@rem;//要比li多出绘制的两个像素
+  display: none;
+  border:1px solid #CCC;
+  border-bottom:none;
+  box-sizing: border-box;
+  margin-left: -1px;//修正多出的一像素
+}
+
+.selectContainer ul li {
+  padding-left: 10/@rem;
+  border-bottom: 1px solid #CCC;
+  line-height: 25/@rem;
+  width: 288/@rem;
+  height: 50/@rem;
+  line-height: 50/@rem;
+  background: #FFF;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.selectContainer ul li:hover {
+  background: #F5F5F5
+}
+
+.selectContainer ul li img:nth-child(1){
+  position: absolute;
+  width: 15/@rem;
+  height: 17/@rem;
+  top: 50%;
+  right: 45/@rem;
+  transform: translateY(-50%);
+}
+
+.selectContainer ul li img:nth-child(2){
+  position: absolute;
+  width: 18/@rem;
+  height: 17/@rem;
+  top: 50%;
+  right: 15/@rem;
+  transform: translateY(-50%);
+}
+
+.selectContainer ul.dis {
+  display: block !important;
+}
+
+.selectContainer ul.undis {
+  //display: noneimportant;
+}
+
+.zIndex {
+  z-index: 10000 !important
+}

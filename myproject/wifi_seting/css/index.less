@@ -1,0 +1,81 @@
+@rem: 22.5rem;
+
+/* 框架搭建 */
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  >body {
+    width: 100%;
+    height: 100%;
+    font-size: 18/@rem;
+    font-family: MicrosoftYaHei, Arial, Helvetica, STHeiTi, sans-serif;
+    background: url("../images/01_bg.png") no-repeat;
+    background-size: 360/@rem 640/@rem;
+    background-color: red;
+    position: relative;
+    > #header {
+      > p {
+        margin-top: 50/@rem;
+        text-align: center;
+        color: #fff;
+        line-height: 24/@rem;
+      }
+    }
+    > .amplifier-download {
+      text-align: center;
+      > .img {
+        margin: 0 auto;
+        text-align: center;
+        width: 180/@rem;
+        height: 180/@rem;
+        line-height:180/@rem;
+        margin-top: 70/@rem;
+        background-color: green;
+      }
+      > p {
+        font-size: 14/@rem;
+        line-height: 19/@rem;
+        margin-top: 10/@rem;
+        color: #fff;
+      }
+    }
+    > #footer {
+      width: 100%;
+      > .setting {
+        width: 100%;
+        > a {
+          display: block;
+          text-align: center;
+          width: 280/@rem;
+          height: 45/@rem;
+          line-height: 45/@rem;
+          font-size: 16/@rem;
+          border-radius: 100/@rem;
+          background-color: #438cff;
+          color: #fff;
+          margin: 153/@rem auto 0 auto;
+        }
+      }
+      > .join-us {
+        font-size: 14/@rem;
+        color: #438cff;
+        line-height: 19/@rem;
+        width: 100%;
+        position: relative;
+        > input {
+
+        }
+        > p {
+          margin-top: 22/@rem;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+}

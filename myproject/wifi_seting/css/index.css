@@ -1,0 +1,72 @@
+/* 框架搭建 */
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html > body {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  font-family: MicrosoftYaHei, Arial, Helvetica, STHeiTi, sans-serif;
+  background: url("../images/01_bg.png") no-repeat;
+  background-size: 16rem 28.44444444rem;
+  background-color: red;
+  position: relative;
+}
+html > body > #header > p {
+  margin-top: 2.22222222rem;
+  text-align: center;
+  color: #fff;
+  line-height: 1.06666667rem;
+}
+html > body > .amplifier-download {
+  text-align: center;
+}
+html > body > .amplifier-download > .img {
+  margin: 0 auto;
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  line-height: 8rem;
+  margin-top: 3.11111111rem;
+  background-color: green;
+}
+html > body > .amplifier-download > p {
+  font-size: 0.62222222rem;
+  line-height: 0.84444444rem;
+  margin-top: 0.44444444rem;
+  color: #fff;
+}
+html > body > #footer {
+  width: 100%;
+}
+html > body > #footer > .setting {
+  width: 100%;
+}
+html > body > #footer > .setting > a {
+  display: block;
+  text-align: center;
+  width: 12.44444444rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 0.71111111rem;
+  border-radius: 4.44444444rem;
+  background-color: #438cff;
+  color: #fff;
+  margin: 6.8rem auto 0 auto;
+}
+html > body > #footer > .join-us {
+  font-size: 0.62222222rem;
+  color: #438cff;
+  line-height: 0.84444444rem;
+  width: 100%;
+  position: relative;
+}
+html > body > #footer > .join-us > p {
+  margin-top: 0.97777778rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

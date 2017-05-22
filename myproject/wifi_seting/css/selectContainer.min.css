@@ -1,0 +1,10 @@
+.selectContainer{position:relative;width:12.8rem;z-index:1000;background:#FFF;margin-top:.26666667rem}
+.selectContainer .selectOption{display:none}
+.selectContainer .shows{width:.88888889rem;height:.88888889rem;position:absolute;right:.08888889rem;top:.08888889rem}
+.selectContainer ul{position:absolute;width:12.88888889rem;display:none;border:1px solid #CCC;border-bottom:none;box-sizing:border-box;margin-left:-1px}
+.selectContainer ul li{padding-left:.44444444rem;border-bottom:1px solid #CCC;width:12.8rem;height:2.22222222rem;line-height:2.22222222rem;background:#FFF;box-sizing:border-box;position:relative}
+.selectContainer ul li:hover{background:#f5f5f5}
+.selectContainer ul li img:nth-child(1){position:absolute;width:.66666667rem;height:.75555556rem;top:50%;right:2rem;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.selectContainer ul li img:nth-child(2){position:absolute;width:.8rem;height:.75555556rem;top:50%;right:.66666667rem;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+.selectContainer ul.dis{display:block!important}
+.zIndex{z-index:10000!important}

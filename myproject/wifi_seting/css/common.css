@@ -1,0 +1,39 @@
+/* reset */
+body,
+h3,
+input,
+ul,
+p,
+li,
+div,
+span,
+i {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input {
+  border: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  color: #818788;
+}
+input {
+  -webkit-appearance: none;
+  outline: none;
+}
+/* 工具样式 */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,7 @@
+body,div,h3,i,input,li,p,span,ul{margin:0;padding:0;box-sizing:border-box}
+input{border:none}
+ul{list-style:none}
+img{border:none;vertical-align:top}
+a{-webkit-tap-highlight-color:transparent;text-decoration:none;color:#818788}
+input{-webkit-appearance:none;outline:0}
+.clearfix:after{content:"";display:block;clear:both}

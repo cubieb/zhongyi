@@ -1,0 +1,44 @@
+html{width:100%}
+html>body{width:100%;height:100%;font-size:.62222222rem;line-height:.97777778rem;font-family:MicrosoftYaHei,Arial,Helvetica,STHeiTi,sans-serif}
+html>body>header{width:100%;height:1.95555556rem;line-height:1.95555556rem;background-color:#438cff;text-align:center;color:#fff;font-size:.8rem}
+html>body>header>img{float:left;width:.44444444rem;height:.75555556rem;margin-top:.62222222rem;margin-left:.66666667rem}
+html>body>#title{width:100%;height:3.55555556rem;padding:.66666667rem 1.42222222rem .66666667rem .88888889rem;box-sizing:border-box;background-color:#a8d0ff}
+html>body>#title>img{float:left;width:2.26666667rem;height:2.26666667rem;margin-right:1.11111111rem}
+html>body>#title>p{font-size:.62222222rem;line-height:.97777778rem;color:#fff}
+html>body>#wifi-list{padding:.44444444rem .44444444rem 0;box-sizing:border-box}
+html>body>#wifi-list>.wifi-title>span{display:block;font-size:.62222222rem;line-height:.97777778rem;color:#999;margin:.4rem .44444444rem}
+html>body>#wifi-list>.wifi-name{float:left;width:15.11111111rem;height:2.22222222rem;color:#333;border:2px solid #f0f0f0;box-sizing:border-box}
+html>body>#wifi-list>.wifi-name>.wifi-l{float:left;margin:.62222222rem .44444444rem}
+html>body>#wifi-list>.wifi-name>.wifi-r{position:relative}
+html>body>#wifi-list>.wifi-name>.wifi-r>.list-btn{height:2.13333333rem;width:2.13333333rem;position:absolute;top:0;right:2.17777778rem}
+html>body>#wifi-list>.wifi-name>.wifi-r>.list-btn>img{width:.66666667rem;height:.44444444rem;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}
+html>body>#wifi-list>.wifi-name>.wifi-r>i{width:1px;height:1.33333333rem;background-color:#f0f0f0;position:absolute;top:50%;right:2.13333333rem;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+html>body>#wifi-list>.wifi-name>.wifi-r>.refresh-btn{height:2.13333333rem;width:2.13333333rem;text-align:center;position:absolute;top:0;right:0}
+html>body>#wifi-list>.wifi-name>.wifi-r>.refresh-btn>span{text-align:center;color:#438cff;line-height:2.13333333rem}
+html>body>#wifi-list>.wifi-password{width:15.11111111rem;height:2.22222222rem;margin-top:3.11111111rem;color:#333;border:2px solid #f0f0f0;box-sizing:border-box;position:relative}
+html>body>#wifi-list>.wifi-password>span{float:left;width:4.17777778rem;line-height:2.13333333rem;margin-left:.44444444rem}
+html>body>#wifi-list>.wifi-password>i{float:left;width:2px;height:1.06666667rem;background-color:#f0f0f0;margin-top:.57777778rem}
+html>body>#wifi-list>.wifi-password>input[type=text]{float:left;height:2.13333333rem;font-size:.62222222rem;line-height:2.13333333rem;margin-left:.31111111rem}
+html>body>#wifi-list>.wifi-password>input::-webkit-input-placeholder{color:#dcdcdc}
+html>body>#wifi-list .dividing-line{margin-top:.44444444rem;height:2px;width:15.11111111rem;background-color:#ececec}
+html>body>#wifi-list>.wifi-amplifier{width:15.11111111rem;height:2.22222222rem;margin-top:.44444444rem;color:#333;border:2px solid #f0f0f0;box-sizing:border-box;position:relative}
+html>body>#wifi-list>.wifi-amplifier>span{float:left;width:4.17777778rem;line-height:2.13333333rem;margin-left:.44444444rem}
+html>body>#wifi-list>.wifi-amplifier>i{float:left;width:2px;height:1.06666667rem;background-color:#f0f0f0;margin-top:.57777778rem}
+html>body>#wifi-list>.wifi-amplifier>input[type=text]{float:left;height:2.13333333rem;font-size:.62222222rem;line-height:2.13333333rem;margin-left:.31111111rem}
+html>body>#wifi-list>.wifi-amplifier>input::-webkit-input-placeholder{color:#dcdcdc}
+html>body>#wifi-list>.amplifier-password{width:15.11111111rem;height:2.22222222rem;margin-top:.44444444rem;color:#333;border:2px solid #f0f0f0;box-sizing:border-box;position:relative}
+html>body>#wifi-list>.amplifier-password>span{float:left;width:4.17777778rem;line-height:2.13333333rem;margin-left:.44444444rem}
+html>body>#wifi-list>.amplifier-password>i{float:left;width:2px;height:1.06666667rem;background-color:#f0f0f0;margin-top:.57777778rem}
+html>body>#wifi-list>.amplifier-password>input[type=text]{float:left;height:2.13333333rem;font-size:.62222222rem;line-height:2.13333333rem;margin-left:.31111111rem}
+html>body>#wifi-list>.amplifier-password>input::-webkit-input-placeholder{color:#dcdcdc}
+html>body>#wifi-list>.same-password{margin-top:.48888889rem;margin-bottom:.75555556rem}
+html>body>#wifi-list>.same-password>form{display:inline-block}
+html>body>#wifi-list>.same-password>form>input[type=radio]{box-sizing:border-box;width:.71111111rem;height:.71111111rem;margin-left:.88888889rem;border-radius:50%;border:1px solid #999;vertical-align:middle}
+html>body>#wifi-list>.same-password>span{margin-left:.44444444rem;font-size:.53333333rem;color:#999}
+html>body>#wifi-list>.password-management{width:15.11111111rem;height:2.22222222rem;margin-top:.44444444rem;color:#333;border:2px solid #f0f0f0;box-sizing:border-box;position:relative}
+html>body>#wifi-list>.password-management>span{float:left;width:4.17777778rem;line-height:2.13333333rem;margin-left:.44444444rem}
+html>body>#wifi-list>.password-management>i{float:left;width:2px;height:1.06666667rem;background-color:#f0f0f0;margin-top:.57777778rem}
+html>body>#wifi-list>.password-management>input[type=text]{float:left;height:2.13333333rem;font-size:.62222222rem;line-height:2.13333333rem;margin-left:.31111111rem}
+html>body>#wifi-list>.password-management>input::-webkit-input-placeholder{color:#dcdcdc}
+html>body>#next-bnt{width:100%}
+html>body>#next-bnt>a{display:block;text-align:center;width:12.44444444rem;height:2rem;line-height:2rem;font-size:.71111111rem;border-radius:4.44444444rem;background-color:#438cff;color:#fff;margin:1.6rem auto .88888889rem}

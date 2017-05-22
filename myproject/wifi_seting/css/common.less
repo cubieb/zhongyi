@@ -1,0 +1,34 @@
+/* reset */
+body, h3, input, ul, p, li,div,span,i{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input{
+  border: none;
+}
+ul{
+  list-style: none;
+}
+img{
+  border: none;
+  vertical-align: top;
+}
+a{
+  // 取消a标签手指按下时出现的黑色遮罩层
+  -webkit-tap-highlight-color:transparent;
+  text-decoration: none;
+  color: #818788;
+}
+input {
+  // 解决IOS下表单元素圆角的问题
+  -webkit-appearance:none;
+  outline: none;
+}
+/* 工具样式 */
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
