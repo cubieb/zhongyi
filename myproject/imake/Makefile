@@ -1,11 +1,10 @@
-TARGET := test.cgi
+TARGET := get_from_client.cgi
 
-CROSS := mipsel-linux-
-CROSS :=
+CROSS := /opt/buildroot-gcc463/usr/bin/mipsel-linux-
 CC :=$(CROSS)gcc 
 
 
-all: scan.c utils.c
+all: my.c mod_method.c utils.c
 	$(CC) $^ -o $(TARGET)
 
 clean:
