@@ -1,0 +1,30 @@
+** 环境配置
+- 安装mksqushfs_lzma是出现如下错误
+/usr/bin/ld: mksquashfs.o: undefined reference to symbol 'log10@@GLIBC_2.2.5'
+//lib/x86_64-linux-gnu/libm.so.6: error adding symbols: DSO missing from command line
+collect2: error: ld returned 1 exit status
+make[1]: *** [mksquashfs] Error 1
+make[1]: Leaving directory `/home/winboy/Desktop/toolchain/mksquash_lzma-3.2/squashfs3.2-r2/squashfs-tools'
+make: *** [all] Error 2
+
+这是由于编译的时候没有链接math库。
+追踪溯源，找到了“squashfs3.2-r2/squashfs-tools”目录下Makefile文件，在
+mksquashfs: LDLIBS += -lpthread -lunlzma_r -llzma_r -lstdc++ -lz
+后面加上 -lm
+
+然后编译，就通过了
+
+64位环境安装32位架构的就支持
+
+
+error while loading shared libraries: libz.so.1: cannot open shared object file: 
+No such file or directory
+解决办法来源于: http://askubuntu.com/questions/147400/problems-with-eclipse-and-android-sdk
+
+输入apt-get install lib32ncurses5 ia32-libs
+
+adb: error while loading shared libraries: libstdc++.so.6: wrong ELF class: ELFCLASS64
+
+																			解决方法：sudo apt-get install lib32ncurses5 lib32stdc++6
+
+
